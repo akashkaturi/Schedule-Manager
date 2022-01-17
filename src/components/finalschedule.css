@@ -1,0 +1,76 @@
+.schedule {
+	display: flex;
+	display: inline-block;
+	flex-direction: row;
+	width: 95%;
+	margin: 1rem 1rem;
+}
+.top {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: white;
+	width: 100%;
+	max-height: 90px;
+}
+.top-right {
+	display: flex;
+	flex-direction: row;
+	/* justify-content: center; */
+	align-items: center;
+	min-height: 100%;
+	margin: 0;
+	margin-right: 2rem;
+}
+.top-right > button {
+	margin: 0;
+	margin-left: 2rem;
+}
+.title {
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 1rem;
+}
+.duration {
+	margin: 0;
+	position: relative;
+	bottom: 20px;
+	opacity: 0.5;
+}
+
+/* Middle */
+
+.middle{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	background-color: white;
+}
+.dates{
+	margin-right: auto;
+	display: flex;
+	flex-direction: row;
+
+}
+.dates > div{
+	margin:0 1rem;
+}
+.datetitle{
+	font-size: 14px;
+	opacity: 0.5;
+	margin: 0;
+}
+.dateValue{
+	font-size: 18px;
+	margin: 0;
+}
+.button{
+	margin-right: 2rem;
+	border: none;
+	background-color: ;
+}
+
+
+/* BOTTOM */

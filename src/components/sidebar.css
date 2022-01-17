@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+.rectangle {
+	width: 310px;
+	height: 100vh;
+	background: #32cd32;
+	box-shadow: 2px 0px 6px #dfdfdf28;
+	opacity: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+.top-content {
+	margin-bottom: auto;
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 10px;
+	list-style: none;
+	padding-left: 0;
+}
+h1 {
+	color: white;
+	margin-top: 3rem;
+	margin-bottom: 5rem;
+	text-align: center;
+}
+.content > li {
+	width: 310px;
+}
+
+.content > li > a {
+	display: inline-block;
+	margin: 0;
+	width: 310px;
+	font: normal normal medium 17px Poppins;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	/* cursor: pointer; */
+	text-decoration: none;
+	text-indent: 25px;
+	padding: 0.5rem 0;
+
+	/* padding: 1rem 2rem; */
+}
+ul > li :hover {
+	background: transparent url('./icons/rectangle.png') 0% 0% no-repeat padding-box;
+}
+ul > li ::after {
+	content: '';
+	height: 40px;
+	width: 5px;
+	background-color: black;
+}
+.icon {
+	width: 10px;
+	margin-right: 20px;
+}
+.bottom-content {
+	margin-bottom: 32px;
+}
+.bottom-content > p {
+	color: white;
+	text-align: center;
+	font-size: 17px;
+}
+.bottom-content > a {
+	text-decoration: none;
+	color: #32cd32;
+	width: 246px;
+	height: 60px;
+	background-color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+.triangle {
+	margin-left: 20px;
+}

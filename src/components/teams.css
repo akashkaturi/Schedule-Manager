@@ -1,0 +1,32 @@
+.main {
+	color: black;
+}
+h2 {
+	text-align: center;
+}
+.complete-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.schedule-name {
+	display: flex;
+	flex-direction: column;
+}
+input {
+	height: 40px;
+}
+.middle-content {
+	margin-top: 1rem;
+}
+.middle-content > input {
+	margin: 0 1rem;
+}
+.create {
+	margin-top: 1rem;
+	border: none;
+	padding: 1rem 7rem;
+    background: #32cd32;
+    font-size: 1rem;
+}

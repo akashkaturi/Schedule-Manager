@@ -1,0 +1,38 @@
+.navbar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	/* justify-content: center; */
+	height: 8vh;
+	background-color:#FFFFFF;
+}
+.navbar > a {
+	text-decoration: none;
+	margin: 0 2rem;
+	font-size: 25px;
+	position: relative;
+	opacity: 0.5;
+	color: #0A0A0A;
+}
+.navbar > a::after {
+	content: '';
+	left: 0;
+	position: absolute;
+	display: inline-block;
+	height: 5px;
+	width: 0;
+	bottom: -10px;
+	background-color: black;
+	transition: 0.3s;
+}
+.active-link::after {
+	color: white;
+}
+
+.navbar > a:hover::after {
+	width: 100%;
+}
+
+.navbar > a:hover {
+	opacity: 1;
+}

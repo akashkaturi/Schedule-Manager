@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import Sidebar from './components/SideBar';
+import RightContent from './components/RightContent';
+import Teams from './components/Teams';
 import './App.css';
+import Empty from './components/Empty';
+import { Route, BrowserRouter, Routes } from 'react-router-dom';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<BrowserRouter>
+			<div className='App'>
+				<Sidebar />
+				{/* <RightContent /> */}
+				<Routes>
+					<Route exact path='/empty' element={<Empty />} />
+					<Route exact path='/teams' element={<Teams />} />
+					<Route exact path='/schedulegenerator' element={<RightContent />} />
+				</Routes>
+			</div>
+		</BrowserRouter>
+	);
 }
 
 export default App;
